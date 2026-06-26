@@ -1,0 +1,854 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="DRIP — Software Atelier Indonesia | UMKM, Korporasi, Pemerintah"
+  description="Software atelier Indonesia. Kami menulis kode untuk UMKM, korporasi, dan instansi pemerintah. 11+ tahun pengalaman, 100% kode milik klien."
+>
+
+  <!-- =================== COVER / HERO =================== -->
+  <section class="relative max-w-7xl mx-auto px-6 pt-12 md:pt-20 pb-24 md:pb-32">
+    <!-- Top metadata strip -->
+    <div class="flex items-center justify-between mb-12 md:mb-16 font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--ink-mute)]">
+      <span>Edisi 2026 · Vol. 01</span>
+      <span class="hidden md:inline">— Sebuah Software Atelier</span>
+      <span class="flex items-center gap-2">
+        <span class="w-1.5 h-1.5 rounded-full bg-[var(--emerald-bright)] animate-pulse-dot"></span>
+        Menerima klien baru
+      </span>
+    </div>
+
+    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+      <!-- LEFT: Massive headline -->
+      <div class="lg:col-span-8">
+        <div class="inline-flex items-center gap-2 stamp stamp-emerald mb-10">
+          <span class="w-1.5 h-1.5 bg-[var(--emerald)] rounded-full"></span>
+          Software Atelier · Indonesia
+        </div>
+
+        <h1 class="font-serif text-[clamp(2.75rem,7.5vw,6rem)] leading-[0.95] tracking-tight text-[var(--ink)] mb-10">
+          Perangkat lunak<br/>
+          untuk bisnis yang<br/>
+          <em class="text-[var(--emerald)] not-italic">sedang bergerak</em><span class="text-[var(--ink)]">.</span>
+        </h1>
+
+        <p class="text-lg md:text-xl text-[var(--ink-soft)] leading-[1.55] max-w-2xl mb-10">
+          Kami adalah <span class="underline-mark">atelier kecil</span> yang menulis perangkat lunak untuk UMKM, korporasi, dan instansi pemerintah di seluruh Indonesia. Bukan sekadar bikin tampilan — kami bangun sistem yang benar-benar bekerja untuk bisnis Anda.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center mb-14">
+          <a
+            href="#kontak"
+            class="inline-flex items-center gap-3 bg-[var(--ink)] text-[var(--paper)] text-base font-medium px-7 py-4 rounded-full hover:bg-[var(--emerald)] transition group"
+          >
+            Mulai Proyek Anda
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a
+            href="#karya"
+            class="inline-flex items-center gap-2 text-base text-[var(--ink)] hover:text-[var(--emerald)] transition group font-medium"
+          >
+            <span class="border-b border-[var(--ink)] group-hover:border-[var(--emerald)] pb-0.5">Lihat Karya</span>
+            <span class="text-[var(--ink-mute)] group-hover:text-[var(--emerald)] font-serif italic text-lg">→</span>
+          </a>
+        </div>
+
+        <!-- Credential line -->
+        <div class="flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-[var(--ink-soft)] pt-8 border-t border-[var(--line)]">
+          <span class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-[var(--emerald)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><span class="font-serif text-lg text-[var(--ink)] mr-1">11+</span>tahun</span>
+          </span>
+          <span class="w-px h-5 bg-[var(--line)]"></span>
+          <span class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-[var(--emerald)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><span class="font-serif text-lg text-[var(--ink)] mr-1">50+</span>projek selesai</span>
+          </span>
+          <span class="w-px h-5 bg-[var(--line)]"></span>
+          <span class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-[var(--emerald)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><span class="font-serif text-lg text-[var(--emerald)] mr-1">100%</span>kode milik Anda</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- RIGHT: Spec card -->
+      <div class="lg:col-span-4 lg:sticky lg:top-32">
+        <div class="spec-card p-7 rounded-2xl">
+          <div class="flex items-start justify-between mb-5">
+            <div>
+              <div class="font-mono text-[9px] uppercase tracking-[0.22em] text-[var(--ink-mute)] mb-1">FACT SHEET</div>
+              <div class="font-serif text-2xl text-[var(--ink)] leading-tight">DRIP<span class="text-[var(--emerald)]">.</span></div>
+            </div>
+            <div class="text-right">
+              <div class="font-mono text-[9px] uppercase tracking-[0.22em] text-[var(--ink-mute)]">No.</div>
+              <div class="font-serif text-lg text-[var(--ink)]">001</div>
+            </div>
+          </div>
+
+          <dl class="space-y-3 text-sm">
+            <div class="flex justify-between items-baseline pb-2 border-b border-dashed border-[var(--line)]">
+              <dt class="font-mono text-[10px] uppercase tracking-wider text-[var(--ink-mute)]">Didirikan</dt>
+              <dd class="font-serif text-[var(--ink)]">2015</dd>
+            </div>
+            <div class="flex justify-between items-baseline pb-2 border-b border-dashed border-[var(--line)]">
+              <dt class="font-mono text-[10px] uppercase tracking-wider text-[var(--ink-mute)]">Bentuk</dt>
+              <dd class="text-[var(--ink)]">Atelier solo</dd>
+            </div>
+            <div class="flex justify-between items-baseline pb-2 border-b border-dashed border-[var(--line)]">
+              <dt class="font-mono text-[10px] uppercase tracking-wider text-[var(--ink-mute)]">Lokasi</dt>
+              <dd class="text-[var(--ink)]">Yogyakarta</dd>
+            </div>
+            <div class="flex justify-between items-baseline pb-2 border-b border-dashed border-[var(--line)]">
+              <dt class="font-mono text-[10px] uppercase tracking-wider text-[var(--ink-mute)]">Wilayah</dt>
+              <dd class="text-[var(--ink)]">Seluruh Indonesia</dd>
+            </div>
+            <div class="flex justify-between items-baseline pb-2 border-b border-dashed border-[var(--line)]">
+              <dt class="font-mono text-[10px] uppercase tracking-wider text-[var(--ink-mute)]">Klien</dt>
+              <dd class="text-[var(--ink)]">UMKM · Korporasi · Govt</dd>
+            </div>
+            <div class="flex justify-between items-baseline pb-2 border-b border-dashed border-[var(--line)]">
+              <dt class="font-mono text-[10px] uppercase tracking-wider text-[var(--ink-mute)]">Bahasa</dt>
+              <dd class="text-[var(--ink)]">Indonesia, English</dd>
+            </div>
+            <div class="flex justify-between items-baseline pb-2 border-b border-dashed border-[var(--line)]">
+              <dt class="font-mono text-[10px] uppercase tracking-wider text-[var(--ink-mute)]">Standar</dt>
+              <dd class="text-[var(--emerald)] font-medium">SPBE · OWASP</dd>
+            </div>
+            <div class="flex justify-between items-baseline">
+              <dt class="font-mono text-[10px] uppercase tracking-wider text-[var(--ink-mute)]">IP</dt>
+              <dd class="text-[var(--emerald)] font-medium">100% klien</dd>
+            </div>
+          </dl>
+
+          <div class="mt-6 pt-5 border-t border-[var(--line)] text-[11px] text-[var(--ink-mute)] leading-relaxed font-mono">
+            <span class="text-[var(--emerald)]">▸</span> Jangan ragu bertanya, kami akan jujur kalau bukan proyek yang tepat untuk kami.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== 01 · KLIEN =================== -->
+  <section id="klien" class="relative max-w-7xl mx-auto px-6 py-24 md:py-32">
+    <!-- Section header -->
+    <div class="grid lg:grid-cols-12 gap-8 mb-16 md:mb-20">
+      <div class="lg:col-span-2">
+        <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--ink-mute)] mb-2">Bagian</div>
+        <div class="font-serif text-7xl text-[var(--emerald)] leading-none">01</div>
+      </div>
+      <div class="lg:col-span-10">
+        <h2 class="font-serif text-4xl md:text-6xl tracking-tight text-[var(--ink)] leading-[1.05] mb-6">
+          Tiga klien. <em class="text-[var(--emerald)]">Satu standar.</em>
+        </h2>
+        <p class="text-lg md:text-xl text-[var(--ink-soft)] leading-[1.55] max-w-3xl">
+          Apapun ukuran Anda — dari warung kelontong di Sulawesi sampai kementerian di Jakarta — kami layani dengan standar engineering yang sama. <span class="underline-mark">Tidak ada kelas dua.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- UMKM -->
+      <article class="group relative bg-[var(--paper-elevated)] border border-[var(--line)] p-8 rounded-2xl hover:border-[var(--emerald)] transition overflow-hidden">
+        <div class="absolute top-0 right-0 font-serif text-7xl text-[var(--emerald)]/8 leading-none p-4">α</div>
+        <div class="relative">
+          <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--ink-mute)] mb-6">Untuk UMKM</div>
+          <h3 class="font-serif text-3xl text-[var(--ink)] leading-tight mb-4">Usaha Mikro, Kecil, Menengah<span class="text-[var(--emerald)]">.</span></h3>
+          <p class="text-[var(--ink-soft)] leading-[1.6] text-[15px] mb-7">
+            Solusi digital <em class="font-serif">terjangkau, cepat jadi, dan siap pakai.</em> Untuk pemilik usaha yang ingin go-online tanpa pusing urusan teknis.
+          </p>
+          <ul class="space-y-2.5 text-sm text-[var(--ink-soft)] mb-7">
+            <li class="flex gap-3"><span class="text-[var(--emerald)] mt-0.5">→</span> Toko online & landing page</li>
+            <li class="flex gap-3"><span class="text-[var(--emerald)] mt-0.5">→</span> Sistem kasir & inventory</li>
+            <li class="flex gap-3"><span class="text-[var(--emerald)] mt-0.5">→</span> Integrasi QRIS & WhatsApp</li>
+            <li class="flex gap-3"><span class="text-[var(--emerald)] mt-0.5">→</span> Training via Zoom included</li>
+          </ul>
+          <div class="pt-6 border-t border-dashed border-[var(--line)] flex items-baseline justify-between">
+            <span class="font-mono text-[10px] uppercase tracking-wider text-[var(--ink-mute)]">Mulai dari</span>
+            <span class="font-serif text-2xl text-[var(--emerald)]">Rp 15 juta</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Korporasi -->
+      <article class="group relative bg-[var(--ink)] text-[var(--paper)] p-8 rounded-2xl overflow-hidden">
+        <div class="absolute top-0 right-0 font-serif text-7xl text-[var(--paper)]/8 leading-none p-4">β</div>
+        <div class="absolute top-4 right-4 stamp" style="background: rgba(168, 138, 77, 0.15); border-color: var(--gold); color: var(--gold);">Paling Diminati</div>
+        <div class="relative">
+          <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--paper)]/50 mb-6">Untuk Korporasi</div>
+          <h3 class="font-serif text-3xl leading-tight mb-4">Perusahaan Menengah & Besar<span class="text-[var(--gold)]">.</span></h3>
+          <p class="text-[var(--paper)]/75 leading-[1.6] text-[15px] mb-7">
+            Sistem <em class="font-serif">custom enterprise-grade</em> yang terintegrasi dengan workflow existing Anda. Skalabel, aman, siap di-audit.
+          </p>
+          <ul class="space-y-2.5 text-sm text-[var(--paper)]/75 mb-7">
+            <li class="flex gap-3"><span class="text-[var(--gold)] mt-0.5">→</span> ERP, CRM, dashboard analytics</li>
+            <li class="flex gap-3"><span class="text-[var(--gold)] mt-0.5">→</span> Integrasi API & middleware</li>
+            <li class="flex gap-3"><span class="text-[var(--gold)] mt-0.5">→</span> SSO, RBAC, audit log</li>
+            <li class="flex gap-3"><span class="text-[var(--gold)] mt-0.5">→</span> Dokumentasi teknis lengkap</li>
+          </ul>
+          <div class="pt-6 border-t border-dashed border-[var(--paper)]/15 flex items-baseline justify-between">
+            <span class="font-mono text-[10px] uppercase tracking-wider text-[var(--paper)]/50">Mulai dari</span>
+            <span class="font-serif text-2xl text-[var(--gold)]">Rp 50 juta</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Pemerintah -->
+      <article class="group relative bg-[var(--paper-elevated)] border border-[var(--line)] p-8 rounded-2xl hover:border-[var(--rust)] transition overflow-hidden">
+        <div class="absolute top-0 right-0 font-serif text-7xl text-[var(--rust)]/8 leading-none p-4">γ</div>
+        <div class="relative">
+          <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--ink-mute)] mb-6">Untuk Pemerintah</div>
+          <h3 class="font-serif text-3xl text-[var(--ink)] leading-tight mb-4">Kementerian, Pemda, BUMD<span class="text-[var(--rust)]">.</span></h3>
+          <p class="text-[var(--ink-soft)] leading-[1.6] text-[15px] mb-7">
+            Sistem informasi <em class="font-serif">SPBE-compliant</em>, hosted di PDN, sesuai regulasi. Berpengalaman e-procurement LKPP dan audit BPKP.
+          </p>
+          <ul class="space-y-2.5 text-sm text-[var(--ink-soft)] mb-7">
+            <li class="flex gap-3"><span class="text-[var(--rust)] mt-0.5">→</span> Sistem informasi & e-government</li>
+            <li class="flex gap-3"><span class="text-[var(--rust)] mt-0.5">→</span> SPBE · TKDN · PDN-ready</li>
+            <li class="flex gap-3"><span class="text-[var(--rust)] mt-0.5">→</span> e-Procurement & kontrak LKPP</li>
+            <li class="flex gap-3"><span class="text-[var(--rust)] mt-0.5">→</span> BAST & dokumentasi RFP</li>
+          </ul>
+          <div class="pt-6 border-t border-dashed border-[var(--line)] flex items-baseline justify-between">
+            <span class="font-mono text-[10px] uppercase tracking-wider text-[var(--ink-mute)]">Penawaran</span>
+            <span class="font-serif text-2xl text-[var(--rust)]">via tender</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- =================== TRUST MARQUEE =================== -->
+  <section class="border-y border-[var(--line)] bg-[var(--paper-deep)] py-7 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 flex items-center gap-10">
+      <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--ink-mute)] whitespace-nowrap hidden md:block">Dipercaya oleh →</div>
+      <div class="flex-1 overflow-hidden">
+        <div class="flex items-center gap-12 whitespace-nowrap animate-marquee">
+          {Array.from({length: 2}).map(() => (
+            <div class="flex items-center gap-12 text-[var(--ink-soft)]">
+              <span class="font-serif text-lg">100+ Masjid</span>
+              <span class="text-[var(--ink-faint)]">◆</span>
+              <span class="font-serif text-lg">Klinik & RS Swasta</span>
+              <span class="text-[var(--ink-faint)]">◆</span>
+              <span class="font-serif text-lg">UMKM Nasional</span>
+              <span class="text-[var(--ink-faint)]">◆</span>
+              <span class="font-serif text-lg">Startup B2B</span>
+              <span class="text-[var(--ink-faint)]">◆</span>
+              <span class="font-serif text-lg">Instansi Pemda</span>
+              <span class="text-[var(--ink-faint)]">◆</span>
+              <span class="font-serif text-lg">F&B & Retail</span>
+              <span class="text-[var(--ink-faint)]">◆</span>
+              <span class="font-serif text-lg">BUMD</span>
+              <span class="text-[var(--ink-faint)]">◆</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== 02 · PEKERJAAN =================== -->
+  <section id="pekerjaan" class="relative max-w-7xl mx-auto px-6 py-24 md:py-32">
+    <div class="grid lg:grid-cols-12 gap-8 mb-16">
+      <div class="lg:col-span-2">
+        <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--ink-mute)] mb-2">Bagian</div>
+        <div class="font-serif text-7xl text-[var(--emerald)] leading-none">02</div>
+      </div>
+      <div class="lg:col-span-10">
+        <h2 class="font-serif text-4xl md:text-6xl tracking-tight text-[var(--ink)] leading-[1.05] mb-6">
+          Enam jenis pekerjaan<span class="text-[var(--ink-mute)]">.</span><br/>
+          <em class="text-[var(--emerald)] text-3xl md:text-4xl">Satu standar mutu.</em>
+        </h2>
+        <p class="text-lg text-[var(--ink-soft)] leading-[1.55] max-w-2xl">
+          Dari ide sampai production, kami handle semuanya. Anda fokus ke bisnis, kami yang urus teknologinya.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-5xl">
+      {[
+        { n: '01', t: 'Aplikasi Custom', d: 'Web app, mobile app, dan dashboard internal. Dibangun dari nol sesuai workflow Anda — bukan template yang dipaksakan.', s: 'Web · Mobile · Dashboard' },
+        { n: '02', t: 'AI Agent & Otomasi', d: 'Chatbot WhatsApp, workflow otomatis, dan analisis data. AI yang benar-benar bekerja, bukan gimmick yang ramai di Twitter.', s: 'LLM · RAG · Workflow' },
+        { n: '03', t: 'Integrasi Sistem & API', d: 'Hubungkan sistem lama dengan yang baru. Payment gateway, accounting, marketplace, API pemerintah — semua bisa.', s: 'REST · Webhook · Middleware' },
+        { n: '04', t: 'Konsultasi & Perencanaan', d: 'Pusing mulai dari mana? Kami bantu petakan: apa yang harus dibangun, urutan prioritas, dan estimasi biayanya.', s: 'Roadmap · Audit · Arsitektur' },
+        { n: '05', t: 'Migrasi & Modernisasi', d: 'Sistem lama masih jalan tapi sudah berdebu? Kami migrasi ke stack modern tanpa downtime panjang.', s: 'Legacy · Cloud · Refactor' },
+        { n: '06', t: 'Pemeliharaan & Support', d: 'Sistem sudah jadi? Kami jaga tetap jalan 24/7. Bug fix, update keamanan, monitoring server — handled.', s: 'Monitoring · Update · SLA' }
+      ].map((item) => (
+        <article class="editorial-item group hover:bg-[var(--paper-elevated)] transition -mx-4 px-4 rounded-xl">
+          <div class="number">{item.n}</div>
+          <div>
+            <div class="flex flex-wrap items-baseline gap-x-4 gap-y-1 mb-2">
+              <h3 class="font-serif text-2xl md:text-3xl text-[var(--ink)] group-hover:text-[var(--emerald)] transition">{item.t}</h3>
+              <span class="font-mono text-[10px] uppercase tracking-wider text-[var(--ink-mute)]">{item.s}</span>
+            </div>
+            <p class="text-[var(--ink-soft)] leading-[1.6] max-w-2xl">{item.d}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <!-- =================== 03 · PROSES =================== -->
+  <section id="proses" class="bg-[var(--ink)] text-[var(--paper)] py-24 md:py-32">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-12 gap-8 mb-16 md:mb-20">
+        <div class="lg:col-span-2">
+          <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--paper)]/40 mb-2">Bagian</div>
+          <div class="font-serif text-7xl text-[var(--gold)] leading-none">03</div>
+        </div>
+        <div class="lg:col-span-10">
+          <h2 class="font-serif text-4xl md:text-6xl tracking-tight leading-[1.05] mb-6">
+            Empat tahap<span class="text-[var(--paper)]/40">.</span><br/>
+            <em class="text-[var(--gold)] text-3xl md:text-4xl">Tanpa rapat berlarut-larut.</em>
+          </h2>
+          <p class="text-lg text-[var(--paper)]/70 leading-[1.55] max-w-2xl">
+            Tanpa Jira yang tidak ada habisnya. Tanpa meeting 2 jam tiap Jumat. Murni eksekusi asinkron yang terukur.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-px bg-[var(--paper)]/10">
+        {[
+          { n: 'I', t: 'Riset & Scope', d: 'Kita gali kebutuhan, kunci fitur utama, dan setujui anggaran di depan. Tidak ada kejutan di belakang.', time: 'Minggu 1' },
+          { n: 'II', t: 'Bangun Mesin', d: 'API, database, autentikasi, payment gateway. Infrastruktur yang teruji sebelum kita tempelkan UI.', time: 'Minggu 2-3' },
+          { n: 'III', t: 'Sambung Antarmuka', d: 'UI yang bersih, responsif, dan terasa premium di setiap klik. Bukan template Bootstrap.', time: 'Minggu 3-4' },
+          { n: 'IV', t: 'Uji & Luncur', d: 'Squash bug, tes payment live, deploy ke production. Sistem Anda siap dipakai dari hari pertama.', time: 'Minggu 4' }
+        ].map((step, i) => (
+          <div class="bg-[var(--ink)] p-8 relative group">
+            <div class="absolute top-6 right-6 font-mono text-[10px] uppercase tracking-wider text-[var(--paper)]/30">{step.time}</div>
+            <div class="font-serif text-5xl text-[var(--gold)]/60 leading-none mb-6">{step.n}</div>
+            <h3 class="font-serif text-xl text-[var(--paper)] mb-3">{step.t}</h3>
+            <p class="text-sm text-[var(--paper)]/65 leading-[1.6]">{step.d}</p>
+          </div>
+        ))}
+      </div>
+
+      <!-- Pull quote -->
+      <div class="mt-20 max-w-3xl">
+        <div class="text-[var(--gold)] text-5xl font-serif leading-none mb-4">"</div>
+        <p class="pull-quote text-2xl md:text-3xl text-[var(--paper)] leading-[1.25] mb-6">
+          Scope yang jelas di awal adalah alasan kenapa kami selalu menyelesaikan tepat waktu. Tidak ada scope creep, tidak ada "tambahin ini dulu ya".
+        </p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-px bg-[var(--gold)]"></div>
+          <span class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--paper)]/50">Prinsip kerja</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== 04 · KARYA =================== -->
+  <section id="karya" class="relative max-w-7xl mx-auto px-6 py-24 md:py-32">
+    <div class="grid lg:grid-cols-12 gap-8 mb-16">
+      <div class="lg:col-span-2">
+        <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--ink-mute)] mb-2">Bagian</div>
+        <div class="font-serif text-7xl text-[var(--emerald)] leading-none">04</div>
+      </div>
+      <div class="lg:col-span-10">
+        <h2 class="font-serif text-4xl md:text-6xl tracking-tight text-[var(--ink)] leading-[1.05] mb-6">
+          Beberapa karya<span class="text-[var(--ink-mute)]">.</span><br/>
+          <em class="text-[var(--emerald)] text-3xl md:text-4xl">Yang sudah jalan, bukan janji.</em>
+        </h2>
+        <p class="text-lg text-[var(--ink-soft)] leading-[1.55] max-w-2xl">
+          Kami tidak hanya jasa — kami juga punya produk sendiri yang dipakai ribuan pengguna. Ini kualitas yang akan Anda dapat.
+        </p>
+      </div>
+    </div>
+
+    <!-- Featured: Mesjid.app -->
+    <article class="mb-12 grid lg:grid-cols-12 gap-8 pb-12 border-b border-[var(--line)]">
+      <div class="lg:col-span-5">
+        <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--ink-mute)] mb-3">No. 01 · Produk utama</div>
+        <a href="https://mesjid.app" target="_blank" rel="noopener" class="group inline-block">
+          <h3 class="font-serif text-5xl md:text-6xl text-[var(--ink)] leading-[1] group-hover:text-[var(--emerald)] transition mb-3">
+            Mesjid<span class="text-[var(--emerald)]">.</span>app
+          </h3>
+        </a>
+        <div class="font-mono text-xs text-[var(--ink-mute)] mb-5">mesjid.app · Go · Svelte 5 · SQLite</div>
+        <p class="text-[var(--ink-soft)] leading-[1.65] text-[17px] mb-6">
+          Display TV digital untuk masjid — jadwal shalat realtime, pengumuman, keuangan, data jamaah. Solusi digital yang dipakai <em class="font-serif text-[var(--ink)]">lebih dari 100 masjid</em> di Indonesia, dari Sabang sampai Merauke.
+        </p>
+        <a href="https://mesjid.app" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-[var(--emerald)] font-medium group">
+          <span class="border-b border-[var(--emerald)]">Kunjungi mesjid.app</span>
+          <span class="group-hover:translate-x-1 transition-transform">→</span>
+        </a>
+      </div>
+      <div class="lg:col-span-6 lg:col-start-7 bg-[var(--paper-deep)] border border-[var(--line)] p-8 rounded-2xl flex flex-col justify-between">
+        <div>
+          <div class="font-serif text-7xl text-[var(--emerald)] leading-none mb-4">100+</div>
+          <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--ink-mute)] mb-6">Masjid aktif menggunakan</div>
+          <div class="space-y-3 text-sm text-[var(--ink-soft)]">
+            <div class="flex justify-between border-b border-dashed border-[var(--line)] pb-2">
+              <span>Jadwal shalat</span>
+              <span class="font-mono text-[var(--ink)]">realtime</span>
+            </div>
+            <div class="flex justify-between border-b border-dashed border-[var(--line)] pb-2">
+              <span>Pengumuman digital</span>
+              <span class="font-mono text-[var(--ink)]">otomatis</span>
+            </div>
+            <div class="flex justify-between border-b border-dashed border-[var(--line)] pb-2">
+              <span>Keuangan masjid</span>
+              <span class="font-mono text-[var(--ink)]">terintegrasi</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Payment gateway</span>
+              <span class="font-mono text-[var(--ink)]">iPaymu</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 2-column grid -->
+    <div class="grid md:grid-cols-2 gap-6">
+      <!-- DripSender -->
+      <a href="https://dripsender.id" target="_blank" rel="noopener" class="group block p-7 border border-[var(--line)] rounded-2xl hover:border-[var(--emerald)] transition bg-[var(--paper-elevated)]">
+        <div class="flex items-start justify-between mb-5">
+          <div>
+            <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--ink-mute)] mb-1">No. 02</div>
+            <h3 class="font-serif text-3xl text-[var(--ink)] group-hover:text-[var(--emerald)] transition">DripSender</h3>
+          </div>
+          <div class="font-mono text-[10px] uppercase tracking-wider text-[var(--emerald)]">LIVE</div>
+        </div>
+        <p class="text-sm text-[var(--ink-soft)] leading-[1.6] mb-5">
+          Otomasi WhatsApp marketing untuk UMKM: campaign terjadwal, chatbot tanpa batas, AI content generator. Tanpa coding.
+        </p>
+        <div class="flex flex-wrap gap-2 font-mono text-[10px] uppercase tracking-wider text-[var(--ink-mute)]">
+          <span>WhatsApp API</span><span>·</span>
+          <span>SaaS</span><span>·</span>
+          <span>AI</span>
+        </div>
+      </a>
+
+      <!-- DripForm -->
+      <a href="https://dripform.id" target="_blank" rel="noopener" class="group block p-7 border border-[var(--line)] rounded-2xl hover:border-[var(--emerald)] transition bg-[var(--paper-elevated)]">
+        <div class="flex items-start justify-between mb-5">
+          <div>
+            <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--ink-mute)] mb-1">No. 03</div>
+            <h3 class="font-serif text-3xl text-[var(--ink)] group-hover:text-[var(--emerald)] transition">DripForm</h3>
+          </div>
+          <div class="font-mono text-[10px] uppercase tracking-wider text-[var(--emerald)]">LIVE</div>
+        </div>
+        <p class="text-sm text-[var(--ink-soft)] leading-[1.6] mb-5">
+          Form builder + CRM + landing page dalam satu platform. Lengkap dengan affiliate management, notifikasi WhatsApp, dan event ticketing.
+        </p>
+        <div class="flex flex-wrap gap-2 font-mono text-[10px] uppercase tracking-wider text-[var(--ink-mute)]">
+          <span>SaaS</span><span>·</span>
+          <span>Form Builder</span><span>·</span>
+          <span>CRM</span>
+        </div>
+      </a>
+
+      <!-- Laju.dev -->
+      <a href="https://laju.dev" target="_blank" rel="noopener" class="group block p-7 border border-[var(--line)] rounded-2xl hover:border-[var(--emerald)] transition bg-[var(--paper-elevated)]">
+        <div class="flex items-start justify-between mb-5">
+          <div>
+            <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--ink-mute)] mb-1">No. 04</div>
+            <h3 class="font-serif text-3xl text-[var(--ink)] group-hover:text-[var(--emerald)] transition">Laju.dev</h3>
+          </div>
+          <div class="font-mono text-[10px] uppercase tracking-wider text-[var(--emerald)]">OSS</div>
+        </div>
+        <p class="text-sm text-[var(--ink-soft)] leading-[1.6] mb-5">
+          Framework SaaS berperforma tinggi: Go + Svelte 5 + SQLite + AI workflow. <em class="font-serif">258k RPS, 11× lebih cepat dari Express.</em>
+        </p>
+        <div class="flex flex-wrap gap-2 font-mono text-[10px] uppercase tracking-wider text-[var(--ink-mute)]">
+          <span>Open Source</span><span>·</span>
+          <span>Go</span><span>·</span>
+          <span>Svelte 5</span>
+        </div>
+      </a>
+
+      <!-- Antre.in -->
+      <a href="https://antre.in" target="_blank" rel="noopener" class="group block p-7 border border-[var(--line)] rounded-2xl hover:border-[var(--emerald)] transition bg-[var(--paper-elevated)]">
+        <div class="flex items-start justify-between mb-5">
+          <div>
+            <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--ink-mute)] mb-1">No. 05</div>
+            <h3 class="font-serif text-3xl text-[var(--ink)] group-hover:text-[var(--emerald)] transition">Antre<span class="text-[var(--emerald)]">.</span>in</h3>
+          </div>
+          <div class="font-mono text-[10px] uppercase tracking-wider text-[var(--emerald)]">LIVE</div>
+        </div>
+        <p class="text-sm text-[var(--ink-soft)] leading-[1.6] mb-5">
+          Sistem antrian digital untuk klinik, rumah sakit, dan bisnis jasa. Digital waiting room, booking, notifikasi, integrasi kasir.
+        </p>
+        <div class="flex flex-wrap gap-2 font-mono text-[10px] uppercase tracking-wider text-[var(--ink-mute)]">
+          <span>B2B SaaS</span><span>·</span>
+          <span>Healthcare</span><span>·</span>
+          <span>Queue</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- NDA Work -->
+    <div class="mt-20 pt-16 border-t border-[var(--line)]">
+      <div class="grid lg:grid-cols-12 gap-8 mb-12">
+        <div class="lg:col-span-7">
+          <div class="stamp mb-6">
+            <span class="w-1.5 h-1.5 bg-[var(--ink)] rounded-full"></span>
+            Di bawah NDA
+          </div>
+          <h3 class="font-serif text-3xl md:text-4xl text-[var(--ink)] leading-[1.1] mb-5">
+            Karya yang tidak bisa kami tampilkan<span class="text-[var(--ink-mute)]">.</span>
+          </h3>
+          <p class="text-[var(--ink-soft)] leading-[1.6] max-w-2xl">
+            Banyak klien dilindungi perjanjian kerahasiaan. Di balik NDA, kami sudah kirim <em class="font-serif text-[var(--ink)]">20+ sistem production</em> — dari POS, ERP, sampai sistem informasi pemerintah.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-[var(--line)] border border-[var(--line)] rounded-2xl overflow-hidden">
+        {[
+          { t: 'Korporasi', d: 'ERP multi-cabang, sistem internal, dashboard analytics' },
+          { t: 'F&B & Retail', d: 'POS, inventory, kitchen display, online ordering' },
+          { t: 'Kesehatan', d: 'Sistem klinik, antrian RS, rekam medis elektronik' },
+          { t: 'Instansi Publik', d: 'Sistem informasi, e-government, layanan digital' }
+        ].map((cat) => (
+          <div class="bg-[var(--paper-elevated)] p-6">
+            <div class="font-serif text-2xl text-[var(--ink)] mb-3">{cat.t}</div>
+            <p class="text-sm text-[var(--ink-soft)] leading-[1.55]">{cat.d}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== ANGKA =================== -->
+  <section class="bg-[var(--paper-deep)] border-y border-[var(--line)] py-20 md:py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8 md:gap-4">
+        {[
+          { num: '11+', label: 'Tahun pengalaman', sub: 'sejak 2015' },
+          { num: '50+', label: 'Projek selesai', sub: 'web · mobile · AI' },
+          { num: '100%', label: 'Kode milik klien', sub: 'IP handover penuh' },
+          { num: '24/7', label: 'Support WhatsApp', sub: 'response < 4 jam' }
+        ].map((stat, i) => (
+          <div class={`text-center md:text-left ${i > 0 ? 'md:border-l md:border-[var(--line)] md:pl-8' : ''}`}>
+            <div class="font-serif text-5xl md:text-6xl text-[var(--emerald)] leading-none tracking-tight mb-3">{stat.num}</div>
+            <div class="font-medium text-[var(--ink)] mb-1">{stat.label}</div>
+            <div class="font-mono text-[10px] uppercase tracking-wider text-[var(--ink-mute)]">{stat.sub}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== 05 · TARIF =================== -->
+  <section id="tarif" class="relative max-w-7xl mx-auto px-6 py-24 md:py-32">
+    <div class="grid lg:grid-cols-12 gap-8 mb-16">
+      <div class="lg:col-span-2">
+        <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--ink-mute)] mb-2">Bagian</div>
+        <div class="font-serif text-7xl text-[var(--emerald)] leading-none">05</div>
+      </div>
+      <div class="lg:col-span-10">
+        <h2 class="font-serif text-4xl md:text-6xl tracking-tight text-[var(--ink)] leading-[1.05] mb-6">
+          Berapa biayanya<span class="text-[var(--ink-mute)]">?</span><br/>
+          <em class="text-[var(--emerald)] text-3xl md:text-4xl">Tanpa kejutan di belakang.</em>
+        </h2>
+        <p class="text-lg text-[var(--ink-soft)] leading-[1.55] max-w-2xl">
+          Tiga paket yang jelas cakupannya. Pilih sesuai segmen dan skala bisnis Anda. Semua harga dalam Rupiah.
+        </p>
+      </div>
+    </div>
+
+    <!-- Comparison -->
+    <div class="grid grid-cols-3 gap-4 mb-12 max-w-3xl">
+      <div class="p-4">
+        <div class="font-mono text-[10px] uppercase tracking-wider text-[var(--ink-mute)] mb-1.5">Freelancer</div>
+        <div class="font-serif text-2xl text-[var(--ink-mute)]">Rp 3-8jt</div>
+        <div class="text-[10px] text-[var(--ink-faint)] mt-1">risiko tinggi</div>
+      </div>
+      <div class="p-4 border-x border-[var(--line)] text-center">
+        <div class="font-mono text-[10px] uppercase tracking-wider text-[var(--emerald)] mb-1.5 font-bold">DRIP</div>
+        <div class="font-serif text-2xl text-[var(--emerald)]">Rp 15jt+</div>
+        <div class="text-[10px] text-[var(--ink-mute)] mt-1">garansi & kontrak</div>
+      </div>
+      <div class="p-4 text-right">
+        <div class="font-mono text-[10px] uppercase tracking-wider text-[var(--ink-mute)] mb-1.5">Agency Besar</div>
+        <div class="font-serif text-2xl text-[var(--ink-mute)]">Rp 100jt+</div>
+        <div class="text-[10px] text-[var(--ink-faint)] mt-1">overhead tinggi</div>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Starter -->
+      <article class="p-8 border border-[var(--line)] rounded-2xl bg-[var(--paper-elevated)] hover:border-[var(--emerald)] transition flex flex-col">
+        <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--ink-mute)] mb-4">Paket 01</div>
+        <h3 class="font-serif text-4xl text-[var(--ink)] mb-2">Starter</h3>
+        <p class="text-sm text-[var(--ink-soft)] mb-6">Untuk UMKM yang baru mulai go-digital.</p>
+
+        <div class="pb-6 mb-6 border-b border-dashed border-[var(--line)]">
+          <div class="font-mono text-[10px] uppercase tracking-wider text-[var(--ink-mute)] mb-1">Mulai</div>
+          <div class="font-serif text-4xl text-[var(--ink)]">Rp 15<span class="text-xl text-[var(--ink-mute)]">jt</span></div>
+          <div class="font-mono text-[10px] text-[var(--ink-mute)] mt-1">2-4 minggu · DP 30%</div>
+        </div>
+
+        <ul class="space-y-3 text-sm text-[var(--ink-soft)] mb-8 flex-1">
+          <li class="flex gap-3"><span class="text-[var(--emerald)]">✓</span> Landing page / toko online</li>
+          <li class="flex gap-3"><span class="text-[var(--emerald)]">✓</span> Integrasi QRIS & payment</li>
+          <li class="flex gap-3"><span class="text-[var(--emerald)]">✓</span> Notifikasi WhatsApp</li>
+          <li class="flex gap-3"><span class="text-[var(--emerald)]">✓</span> 1-2 fitur utama</li>
+          <li class="flex gap-3"><span class="text-[var(--emerald)]">✓</span> Training via Zoom</li>
+          <li class="flex gap-3"><span class="text-[var(--emerald)]">✓</span> Garansi bug fix 30 hari</li>
+        </ul>
+
+        <a href="#kontak" class="inline-flex items-center justify-center gap-2 border border-[var(--ink)] text-[var(--ink)] px-5 py-3 rounded-full hover:bg-[var(--ink)] hover:text-[var(--paper)] transition text-sm font-medium">
+          Pilih Starter →
+        </a>
+      </article>
+
+      <!-- Growth -->
+      <article class="p-8 border-2 border-[var(--ink)] rounded-2xl bg-[var(--ink)] text-[var(--paper)] relative flex flex-col">
+        <div class="absolute -top-3 left-8 stamp" style="background: var(--paper); color: var(--ink);">Paling Diminati</div>
+        <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--paper)]/50 mb-4">Paket 02</div>
+        <h3 class="font-serif text-4xl mb-2">Growth</h3>
+        <p class="text-sm text-[var(--paper)]/70 mb-6">Untuk korporasi yang butuh sistem skala besar.</p>
+
+        <div class="pb-6 mb-6 border-b border-dashed border-[var(--paper)]/20">
+          <div class="font-mono text-[10px] uppercase tracking-wider text-[var(--paper)]/50 mb-1">Mulai</div>
+          <div class="font-serif text-4xl text-[var(--gold)]">Rp 50<span class="text-xl text-[var(--paper)]/60">jt</span></div>
+          <div class="font-mono text-[10px] text-[var(--paper)]/50 mt-1">4-8 minggu · termin milestone</div>
+        </div>
+
+        <ul class="space-y-3 text-sm text-[var(--paper)]/80 mb-8 flex-1">
+          <li class="flex gap-3"><span class="text-[var(--gold)]">✓</span> ERP / CRM / dashboard custom</li>
+          <li class="flex gap-3"><span class="text-[var(--gold)]">✓</span> Integrasi API & middleware</li>
+          <li class="flex gap-3"><span class="text-[var(--gold)]">✓</span> Multi-role & SSO</li>
+          <li class="flex gap-3"><span class="text-[var(--gold)]">✓</span> Analytics & reporting</li>
+          <li class="flex gap-3"><span class="text-[var(--gold)]">✓</span> Audit log & compliance</li>
+          <li class="flex gap-3"><span class="text-[var(--gold)]">✓</span> Dokumentasi teknis lengkap</li>
+          <li class="flex gap-3"><span class="text-[var(--gold)]">✓</span> Garansi 60 hari + support 1 bln</li>
+        </ul>
+
+        <a href="#kontak" class="inline-flex items-center justify-center gap-2 bg-[var(--gold)] text-[var(--ink)] px-5 py-3 rounded-full hover:bg-[var(--paper)] transition text-sm font-bold">
+          Pilih Growth →
+        </a>
+      </article>
+
+      <!-- Enterprise -->
+      <article class="p-8 border border-[var(--line)] rounded-2xl bg-[var(--paper-elevated)] hover:border-[var(--rust)] transition flex flex-col">
+        <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--ink-mute)] mb-4">Paket 03</div>
+        <h3 class="font-serif text-4xl text-[var(--ink)] mb-2">Enterprise</h3>
+        <p class="text-sm text-[var(--ink-soft)] mb-6">Untuk tender pemerintah & e-procurement.</p>
+
+        <div class="pb-6 mb-6 border-b border-dashed border-[var(--line)]">
+          <div class="font-mono text-[10px] uppercase tracking-wider text-[var(--ink-mute)] mb-1">Penawaran</div>
+          <div class="font-serif text-4xl text-[var(--rust)]">via tender</div>
+          <div class="font-mono text-[10px] text-[var(--ink-mute)] mt-1">LKPP · e-Procurement</div>
+        </div>
+
+        <ul class="space-y-3 text-sm text-[var(--ink-soft)] mb-8 flex-1">
+          <li class="flex gap-3"><span class="text-[var(--rust)]">✓</span> Sistem informasi custom</li>
+          <li class="flex gap-3"><span class="text-[var(--rust)]">✓</span> SPBE-compliant</li>
+          <li class="flex gap-3"><span class="text-[var(--rust)]">✓</span> Hosting di PDN</li>
+          <li class="flex gap-3"><span class="text-[var(--rust)]">✓</span> TKDN documentation</li>
+          <li class="flex gap-3"><span class="text-[var(--rust)]">✓</span> Integrasi API pemerintah</li>
+          <li class="flex gap-3"><span class="text-[var(--rust)]">✓</span> BAST, RFP-ready</li>
+          <li class="flex gap-3"><span class="text-[var(--rust)]">✓</span> Garansi 90 hari + support 3 bln</li>
+        </ul>
+
+        <a href="#kontak" class="inline-flex items-center justify-center gap-2 border border-[var(--rust)] text-[var(--rust)] px-5 py-3 rounded-full hover:bg-[var(--rust)] hover:text-[var(--paper)] transition text-sm font-medium">
+          Ajukan Penawaran →
+        </a>
+      </article>
+    </div>
+
+    <p class="text-center text-xs text-[var(--ink-mute)] mt-10 font-mono">
+      * Harga final tergantung scope. Penawaran resmi setelah konsultasi & analisis kebutuhan.
+    </p>
+  </section>
+
+  <!-- =================== 06 · SUARA =================== -->
+  <section id="suara" class="bg-[var(--paper-deep)] border-y border-[var(--line)] py-24 md:py-32">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-12 gap-8 mb-16">
+        <div class="lg:col-span-2">
+          <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--ink-mute)] mb-2">Bagian</div>
+          <div class="font-serif text-7xl text-[var(--emerald)] leading-none">06</div>
+        </div>
+        <div class="lg:col-span-10">
+          <h2 class="font-serif text-4xl md:text-6xl tracking-tight text-[var(--ink)] leading-[1.05] mb-6">
+            Apa kata mereka<span class="text-[var(--ink-mute)]">.</span>
+          </h2>
+        </div>
+      </div>
+
+      <div class="space-y-12">
+        <!-- Testi 1 -->
+        <article class="grid lg:grid-cols-12 gap-8 pb-12 border-b border-[var(--line)]">
+          <div class="lg:col-span-2">
+            <div class="font-serif text-6xl text-[var(--emerald)] leading-none">"</div>
+          </div>
+          <div class="lg:col-span-7">
+            <p class="font-serif text-2xl md:text-3xl text-[var(--ink)] leading-[1.25] italic mb-6">
+              Mesjid.app dipakai <em class="not-italic text-[var(--emerald)]">lebih dari 100 masjid</em> di Indonesia. Sistemnya ringan, tampilannya bersih, dan supportnya cepat. Tim sangat paham kebutuhan pengelolaan masjid.
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="font-mono text-xs uppercase tracking-wider text-[var(--ink-mute)]">— Tim Takmir</div>
+              <div class="w-1 h-1 rounded-full bg-[var(--ink-faint)]"></div>
+              <div class="font-mono text-xs text-[var(--ink-mute)]">Masjid Jabal Nur, Bandung</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Testi 2 -->
+        <article class="grid lg:grid-cols-12 gap-8 pb-12 border-b border-[var(--line)]">
+          <div class="lg:col-span-2">
+            <div class="font-serif text-6xl text-[var(--emerald)] leading-none">"</div>
+          </div>
+          <div class="lg:col-span-7">
+            <p class="font-serif text-2xl md:text-3xl text-[var(--ink)] leading-[1.25] italic mb-6">
+              Sistem antrian digital kami handle <em class="not-italic text-[var(--emerald)]">ratusan pasien per hari</em> di 3 cabang klinik. Setelah pakai Antre.in, waktu tunggu turun 40% dan kepuasan pasien naik signifikan.
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="font-mono text-xs uppercase tracking-wider text-[var(--ink-mute)]">— Dr. Ahmad Fauzi</div>
+              <div class="w-1 h-1 rounded-full bg-[var(--ink-faint)]"></div>
+              <div class="font-mono text-xs text-[var(--ink-mute)]">Co-founder, Antre.in</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Testi 3 -->
+        <article class="grid lg:grid-cols-12 gap-8">
+          <div class="lg:col-span-2">
+            <div class="font-serif text-6xl text-[var(--emerald)] leading-none">"</div>
+          </div>
+          <div class="lg:col-span-7">
+            <p class="font-serif text-2xl md:text-3xl text-[var(--ink)] leading-[1.25] italic mb-6">
+              Kami pakai DripSender untuk campaign WhatsApp ke <em class="not-italic text-[var(--emerald)]">15.000+ customer</em>. Open rate 85%, dan setup-nya cuma butuh 2 hari. <em class="font-serif">Game changer untuk UMKM seperti kami.</em>
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="font-mono text-xs uppercase tracking-wider text-[var(--ink-mute)]">— Ibu Siti Rahayu</div>
+              <div class="w-1 h-1 rounded-full bg-[var(--ink-faint)]"></div>
+              <div class="font-mono text-xs text-[var(--ink-mute)]">Owner, Toko Oleh-Oleh Khas Yogya</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== 07 · TANYA =================== -->
+  <section id="faq" class="relative max-w-7xl mx-auto px-6 py-24 md:py-32">
+    <div class="grid lg:grid-cols-12 gap-8 mb-16">
+      <div class="lg:col-span-2">
+        <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--ink-mute)] mb-2">Bagian</div>
+        <div class="font-serif text-7xl text-[var(--emerald)] leading-none">07</div>
+      </div>
+      <div class="lg:col-span-10">
+        <h2 class="font-serif text-4xl md:text-6xl tracking-tight text-[var(--ink)] leading-[1.05] mb-6">
+          Pertanyaan yang sering ditanya<span class="text-[var(--ink-mute)]">.</span>
+        </h2>
+        <p class="text-lg text-[var(--ink-soft)] leading-[1.55] max-w-2xl">
+          Tidak menemukan jawaban Anda? <a href="#kontak" class="text-[var(--emerald)] border-b border-[var(--emerald)]">Tanya langsung via WhatsApp</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-4xl space-y-3">
+      {[
+        { q: 'Berapa biaya untuk mulai?', a: 'Tergantung scope. Paket UMKM mulai Rp 15 juta, paket Korporasi mulai Rp 50 juta, dan paket Pemerintah melalui tender resmi. Setelah konsultasi awal (gratis), kami berikan penawaran tertulis dengan rincian scope, timeline, dan termin pembayaran.' },
+        { q: 'Apakah saya benar-benar memiliki kode-nya?', a: 'Ya, 100%. Semua source code, desain, database schema, dan dokumentasi teknis adalah milik Anda sepenuhnya. Tidak ada lock-in, tidak ada biaya lisensi berkala, tidak ada vendor trap. Anda bisa hire developer lain kapan saja.' },
+        { q: 'Bisakah cicil pembayaran?', a: 'Bisa. Untuk UMKM kami biasa pakai DP 30% + pelunasan 70% saat serah terima. Untuk Korporasi, bisa dicicil per milestone (misal 30-30-40%). Untuk tender pemerintah, mengikuti aturan LPSE yang berlaku.' },
+        { q: 'Apakah melayani tender pemerintah / e-procurement?', a: 'Ya. Kami familiar dengan e-procurement LKPP, format dokumen tender, dan bisa menyediakan dokumen administrasi yang dibutuhkan (NPWP, NIB, SBU, portofolio, dll). Untuk proyek SPBE, kami juga bisa hosting di PDN sesuai kebutuhan.' },
+        { q: 'Bagaimana dengan garansi & support setelahpenyerahan?', a: 'Setiap paket include garansi bug fix: 30 hari (Starter), 60 hari (Growth), 90 hari (Enterprise). Setelah itu, tersedia paket maintenance bulanan mulai Rp 3 juta/bulan untuk monitoring 24/7, update keamanan, dan pengembangan fitur baru.' },
+        { q: 'Bisakah integrasi dengan sistem yang sudah ada?', a: 'Tentu. Kami biasa mengintegrasikan dengan payment gateway (Midtrans, Xendit, Doku), accounting (Jurnal, Accurate, Mekari), marketplace (Tokopedia, Shopee, TikTok Shop), API pemerintah, dan sistem internal Anda via REST API atau webhook.' },
+        { q: 'Apakah melayani klien di luar Jawa?', a: 'Ya, seluruh Indonesia. Meeting bisa via Zoom/Google Meet, komunikasi via WhatsApp/Slack/Email, dan penyerahan bisa remote. Beberapa klien kami ada di luar Jawa — Medan, Makassar, Manado, Papua. Tidak ada biaya tambahan untuk itu.' },
+        { q: 'Berapa lama proses pengerjaan?', a: 'Paket UMKM: 2-4 minggu. Paket Korporasi: 4-8 minggu. Paket Enterprise/Pemerintah: 2-6 bulan tergantung kompleksitas. Semua timeline di-lock di awal dan ada di kontrak. Jika ada delay dari sisi kami, ada kompensasi sesuai kesepakatan.' }
+      ].map((item, i) => (
+        <details class="group border-b border-[var(--line)] pb-5">
+          <summary class="flex items-start justify-between gap-6 cursor-pointer list-none py-4">
+            <div class="flex items-baseline gap-5">
+              <span class="font-mono text-[10px] uppercase tracking-wider text-[var(--ink-mute)] shrink-0">Q.{String(i+1).padStart(2, '0')}</span>
+              <h3 class="font-serif text-xl md:text-2xl text-[var(--ink)] group-hover:text-[var(--emerald)] transition leading-tight">{item.q}</h3>
+            </div>
+            <span class="font-serif text-2xl text-[var(--ink-mute)] group-open:text-[var(--emerald)] group-open:rotate-45 transition-transform shrink-0">+</span>
+          </summary>
+          <div class="pl-12 pt-3 text-[var(--ink-soft)] leading-[1.65]">
+            {item.a}
+          </div>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <!-- =================== 08 · KONVERSASI =================== -->
+  <section id="kontak" class="bg-[var(--ink)] text-[var(--paper)] py-24 md:py-32 relative overflow-hidden">
+    <!-- Decorative -->
+    <div class="absolute top-0 left-0 right-0 overflow-hidden pointer-events-none opacity-[0.05]">
+      <div class="font-serif text-[clamp(10rem,28vw,24rem)] leading-none tracking-tighter text-[var(--paper)] whitespace-nowrap -translate-y-1/4 text-center">
+        Mari bicara.
+      </div>
+    </div>
+
+    <div class="max-w-5xl mx-auto px-6 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 items-end mb-16">
+        <div class="lg:col-span-8">
+          <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--gold)] mb-6">Bagian 08 · Penutup</div>
+          <h2 class="font-serif text-5xl md:text-7xl leading-[1] tracking-tight">
+            Mari kita lihat<br/>
+            apa yang bisa kami bangun<br/>
+            <em class="text-[var(--gold)]">bersama</em><span class="text-[var(--paper)]/40">.</span>
+          </h2>
+        </div>
+        <div class="lg:col-span-4">
+          <p class="text-[var(--paper)]/70 leading-[1.6] text-[15px]">
+            Ceritakan masalah bisnis Anda. Kami dengarkan dulu, baru kasih rekomendasi — bukan langsung jualan. Kalau memang bukan proyek yang cocok untuk kami, kami akan kasih tahu.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-12">
+        <a
+          href="https://wa.me/62859106956390?text=Halo%20DRIP%2C%20saya%20ingin%20konsultasi%20mengenai%20proyek"
+          target="_blank"
+          rel="noopener"
+          class="group block p-8 border border-[var(--paper)]/15 rounded-2xl hover:border-[var(--gold)] hover:bg-[var(--paper)]/[0.03] transition"
+        >
+          <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--gold)] mb-4">Utama · Respon 1-4 jam</div>
+          <div class="font-serif text-3xl mb-2">WhatsApp</div>
+          <div class="font-mono text-[var(--paper)]/60 mb-6">0859-1069-563-90</div>
+          <div class="flex items-center gap-2 text-sm text-[var(--gold)] group-hover:translate-x-1 transition-transform">
+            <span>Mulai percakapan</span>
+            <span>→</span>
+          </div>
+        </a>
+
+        <a
+          href="mailto:maulana@drip.id?subject=Konsultasi%20Proyek&body=Halo%20DRIP%2C%0A%0ASaya%20ingin%20konsultasi%20mengenai%3A%0A-%20Nama%20proyek%3A%0A-%20Segment%20(UMKM%2FKorporasi%2FPemerintah)%3A%0A-%20Estimasi%20budget%3A%0A-%20Timeline%20yang%20diharapkan%3A%0A%0ATerima%20kasih."
+          class="group block p-8 border border-[var(--paper)]/15 rounded-2xl hover:border-[var(--gold)] hover:bg-[var(--paper)]/[0.03] transition"
+        >
+          <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--gold)] mb-4">Formal · Untuk proposal</div>
+          <div class="font-serif text-3xl mb-2">Email</div>
+          <div class="font-mono text-[var(--paper)]/60 mb-6">maulana@drip.id</div>
+          <div class="flex items-center gap-2 text-sm text-[var(--gold)] group-hover:translate-x-1 transition-transform">
+            <span>Kirim email</span>
+            <span>→</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="pt-10 border-t border-[var(--paper)]/10 grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
+        <div>
+          <div class="font-mono text-[10px] uppercase tracking-wider text-[var(--paper)]/40 mb-2">Lokasi</div>
+          <div class="text-[var(--paper)]/80">Yogyakarta, ID</div>
+        </div>
+        <div>
+          <div class="font-mono text-[10px] uppercase tracking-wider text-[var(--paper)]/40 mb-2">Wilayah</div>
+          <div class="text-[var(--paper)]/80">Seluruh Indonesia</div>
+        </div>
+        <div>
+          <div class="font-mono text-[10px] uppercase tracking-wider text-[var(--paper)]/40 mb-2">Jam kerja</div>
+          <div class="text-[var(--paper)]/80">Sen-Jum · 09-18 WIB</div>
+        </div>
+        <div>
+          <div class="font-mono text-[10px] uppercase tracking-wider text-[var(--paper)]/40 mb-2">Bentuk</div>
+          <div class="text-[var(--paper)]/80">PT. DRIP RINTISAN INOVASI PERKASA</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  // FAQ accordion — using native <details> for better accessibility
+  // but add the +/× rotation if needed
+</script>
