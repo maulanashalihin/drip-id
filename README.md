@@ -36,7 +36,7 @@ Kami tidak hanya jasa — kami juga punya produk sendiri yang dipakai ribuan pen
 - **[Mesjid.app](https://mesjid.app)** — display TV digital untuk 100+ masjid di Indonesia
 - **[DripSender.id](https://dripsender.id)** — otomasi WhatsApp marketing untuk UMKM
 - **[DripForm.id](https://dripform.id)** — form builder + CRM + landing page
-- **[Laju.dev](https://laju.dev)** — framework SaaS berperforma tinggi (258k RPS, open source)
+- **[EatJom.co](https://eatjom.co)** — sistem ordering restoran SaaS dengan QR self-service, kitchen display, multi-cabang
 - **[Antre.in](https://antre.in)** — sistem antrian digital untuk klinik & bisnis jasa
 
 ---
