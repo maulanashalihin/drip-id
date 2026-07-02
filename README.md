@@ -111,7 +111,7 @@ npm run preview
 | --- | --- |
 | **WhatsApp** | [0859-1069-563-90](https://wa.me/62859106956390) |
 | **Email** | [maulana@drip.id](mailto:maulana@drip.id) |
-| **Lokasi** | Yogyakarta, Indonesia |
+| **Lokasi** | Banjarbaru, Kalimantan Selatan, Indonesia |
 | **Wilayah layanan** | Seluruh Indonesia (remote) |
 | **Jam kerja** | Sen–Jum · 09–18 WIB |
 
