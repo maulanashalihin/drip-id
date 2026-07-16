@@ -196,6 +196,7 @@ import Layout from '../layouts/Layout.astro';
       <!-- Pemerintah -->
       <article class="group relative bg-[var(--paper-elevated)] border border-[var(--line)] p-8 rounded-2xl hover:border-[var(--rust)] transition overflow-hidden">
         <div class="absolute top-0 right-0 font-serif text-7xl text-[var(--rust)]/8 leading-none p-4">γ</div>
+        <div class="absolute top-4 right-4 stamp" style="background: rgba(180, 83, 9, 0.12); border-color: var(--rust); color: var(--rust);">Tanpa Tender</div>
         <div class="relative">
           <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--ink-mute)] mb-6">Untuk Pemerintah</div>
           <h3 class="font-serif text-3xl text-[var(--ink)] leading-tight mb-4">Kementerian, Pemda, BUMD<span class="text-[var(--rust)]">.</span></h3>
@@ -205,12 +206,12 @@ import Layout from '../layouts/Layout.astro';
           <ul class="space-y-2.5 text-sm text-[var(--ink-soft)] mb-7">
             <li class="flex gap-3"><span class="text-[var(--rust)] mt-0.5">→</span> Sistem informasi & e-government</li>
             <li class="flex gap-3"><span class="text-[var(--rust)] mt-0.5">→</span> SPBE · TKDN · PDN-ready</li>
-            <li class="flex gap-3"><span class="text-[var(--rust)] mt-0.5">→</span> e-Procurement & kontrak LKPP</li>
+            <li class="flex gap-3"><span class="text-[var(--rust)] mt-0.5">→</span> Pengadaan Langsung ≤ Rp200 jt</li>
             <li class="flex gap-3"><span class="text-[var(--rust)] mt-0.5">→</span> BAST & dokumentasi RFP</li>
           </ul>
           <div class="pt-6 border-t border-dashed border-[var(--line)] flex items-baseline justify-between">
-            <span class="font-mono text-[10px] uppercase tracking-wider text-[var(--ink-mute)]">Penawaran</span>
-            <span class="font-serif text-2xl text-[var(--rust)]">via tender</span>
+            <span class="font-mono text-[10px] uppercase tracking-wider text-[var(--ink-mute)]">Mulai dari</span>
+            <span class="font-serif text-2xl text-[var(--rust)]">Rp 35–195 jt</span>
           </div>
         </div>
       </article>
@@ -622,29 +623,53 @@ import Layout from '../layouts/Layout.astro';
         </a>
       </article>
 
-      <!-- Enterprise -->
+      <!-- Pemerintah -->
       <article class="p-8 border border-[var(--line)] rounded-2xl bg-[var(--paper-elevated)] hover:border-[var(--rust)] transition flex flex-col">
         <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--ink-mute)] mb-4">Paket 03</div>
-        <h3 class="font-serif text-4xl text-[var(--ink)] mb-2">Enterprise</h3>
-        <p class="text-sm text-[var(--ink-soft)] mb-6">Untuk tender pemerintah & e-procurement.</p>
+        <h3 class="font-serif text-4xl text-[var(--ink)] mb-2">Pemerintah</h3>
+        <p class="text-sm text-[var(--ink-soft)] mb-6">Untuk <strong>Pengadaan Langsung</strong> pemerintah tanpa tender.</p>
 
         <div class="pb-6 mb-6 border-b border-dashed border-[var(--line)]">
-          <div class="font-mono text-[10px] uppercase tracking-wider text-[var(--ink-mute)] mb-1">Penawaran</div>
-          <div class="font-serif text-4xl text-[var(--rust)]">via tender</div>
-          <div class="font-mono text-[10px] text-[var(--ink-mute)] mt-1">LKPP · e-Procurement</div>
+          <div class="font-mono text-[10px] uppercase tracking-wider text-[var(--ink-mute)] mb-1">Pengadaan Langsung</div>
+          <div class="font-serif text-4xl text-[var(--rust)]">Rp 35-195<span class="text-xl text-[var(--ink-mute)]">jt</span></div>
+          <div class="font-mono text-[10px] text-[var(--ink-mute)] mt-1">Tanpa tender · Maks Rp200 jt sesuai Perpres</div>
         </div>
 
-        <ul class="space-y-3 text-sm text-[var(--ink-soft)] mb-8 flex-1">
+        <ul class="space-y-3 text-sm text-[var(--ink-soft)] mb-5 flex-1">
           <li class="flex gap-3"><span class="text-[var(--rust)]">✓</span> Sistem informasi custom</li>
           <li class="flex gap-3"><span class="text-[var(--rust)]">✓</span> SPBE-compliant</li>
           <li class="flex gap-3"><span class="text-[var(--rust)]">✓</span> Hosting di PDN</li>
           <li class="flex gap-3"><span class="text-[var(--rust)]">✓</span> TKDN documentation</li>
           <li class="flex gap-3"><span class="text-[var(--rust)]">✓</span> Integrasi API pemerintah</li>
+          <li class="flex gap-3"><span class="text-[var(--rust)]">✓</span> Opsi <strong>tanpa tender</strong> — Pengadaan Langsung</li>
           <li class="flex gap-3"><span class="text-[var(--rust)]">✓</span> BAST, RFP-ready</li>
           <li class="flex gap-3"><span class="text-[var(--rust)]">✓</span> Garansi 90 hari + support 3 bln</li>
         </ul>
 
-        <a href="#kontak" class="inline-flex items-center justify-center gap-2 border border-[var(--rust)] text-[var(--rust)] px-5 py-3 rounded-full hover:bg-[var(--rust)] hover:text-[var(--paper)] transition text-sm font-medium">
+        <div class="pt-4 mt-auto border-t border-dashed border-[var(--line)]">
+          <div class="grid grid-cols-3 gap-2 mb-4 text-center text-xs">
+            <div class="p-2 rounded-lg bg-[var(--paper-deep)]">
+              <div class="font-medium text-[var(--ink)]">Dasar</div>
+              <div class="text-[var(--rust)] font-serif text-lg">Rp 35-65<span class="text-[10px]">jt</span></div>
+              <div class="text-[var(--ink-faint)] text-[9px]">1-2 modul</div>
+            </div>
+            <div class="p-2 rounded-lg bg-[var(--paper-deep)]">
+              <div class="font-medium text-[var(--ink)]">Standar</div>
+              <div class="text-[var(--rust)] font-serif text-lg">Rp 75-135<span class="text-[10px]">jt</span></div>
+              <div class="text-[var(--ink-faint)] text-[9px]">multi-modul</div>
+            </div>
+            <div class="p-2 rounded-lg bg-[var(--paper-deep)]">
+              <div class="font-medium text-[var(--ink)]">Lengkap</div>
+              <div class="text-[var(--rust)] font-serif text-lg">Rp 150-195<span class="text-[10px]">jt</span></div>
+              <div class="text-[var(--ink-faint)] text-[9px]">full sistem</div>
+            </div>
+          </div>
+          <p class="text-[10px] text-[var(--ink-faint)] text-center leading-relaxed">
+            Nilai akhir disesuaikan scope. Semua harga <strong>termasuk</strong> dalam batas Pengadaan Langsung.
+          </p>
+        </div>
+
+        <a href="#kontak" class="inline-flex items-center justify-center gap-2 border border-[var(--rust)] text-[var(--rust)] px-5 py-3 rounded-full hover:bg-[var(--rust)] hover:text-[var(--paper)] transition text-sm font-medium mt-5">
           Ajukan Penawaran →
         </a>
       </article>
@@ -744,10 +769,10 @@ import Layout from '../layouts/Layout.astro';
 
     <div class="max-w-4xl space-y-3">
       {[
-        { q: 'Berapa biaya untuk mulai?', a: 'Tergantung scope. Paket UMKM mulai Rp 15 juta, paket Korporasi mulai Rp 50 juta, dan paket Pemerintah melalui tender resmi. Setelah konsultasi awal (gratis), kami berikan penawaran tertulis dengan rincian scope, timeline, dan termin pembayaran.' },
+        { q: 'Berapa biaya untuk mulai?', a: 'Tergantung scope. Paket UMKM mulai Rp 15 juta, paket Korporasi mulai Rp 50 juta. Untuk pemerintah: via <strong>Pengadaan Langsung</strong> (Rp 35-195 jt, tanpa tender, maks Rp200 jt sesuai Perpres). Setelah konsultasi awal (gratis), kami berikan penawaran tertulis dengan rincian scope, timeline, dan termin pembayaran.' },
         { q: 'Apakah saya benar-benar memiliki kode-nya?', a: 'Ya, 100%. Semua source code, desain, database schema, dan dokumentasi teknis adalah milik Anda sepenuhnya. Tidak ada lock-in, tidak ada biaya lisensi berkala, tidak ada vendor trap. Anda bisa hire developer lain kapan saja.' },
-        { q: 'Bisakah cicil pembayaran?', a: 'Bisa. Untuk UMKM kami biasa pakai DP 30% + pelunasan 70% saat serah terima. Untuk Korporasi, bisa dicicil per milestone (misal 30-30-40%). Untuk tender pemerintah, mengikuti aturan LPSE yang berlaku.' },
-        { q: 'Apakah melayani tender pemerintah / e-procurement?', a: 'Ya. Kami familiar dengan e-procurement LKPP, format dokumen tender, dan bisa menyediakan dokumen administrasi yang dibutuhkan (NPWP, NIB, SBU, portofolio, dll). Untuk proyek SPBE, kami juga bisa hosting di PDN sesuai kebutuhan.' },
+        { q: 'Bisakah cicil pembayaran?', a: 'Bisa. Untuk UMKM kami biasa pakai DP 30% + pelunasan 70% saat serah terima. Untuk Korporasi, bisa dicicil per milestone (misal 30-30-40%). Untuk pemerintah (Pengadaan Langsung), termin bisa disesuaikan dengan tahapan pencairan anggaran Anda.' },
+        { q: 'Apakah bisa langsung pesan tanpa tender?', a: 'Ya, selama nilai proyek ≤ Rp200 jt bisa melalui mekanisme <strong>Pengadaan Langsung</strong> sesuai Perpres 16/2018 jo. 46/2025. Pejabat Pengadaan cukup mengundang kami, negosiasi harga & teknis, lalu terbitkan SPK. Kami paham dokumen yang dibutuhkan (NPWP, NIB, SBU, portofolio) dan siap membantu prosesnya. Untuk proyek SPBE, kami juga bisa hosting di PDN sesuai kebutuhan.' },
         { q: 'Bagaimana dengan garansi & support setelahpenyerahan?', a: 'Setiap paket include garansi bug fix: 30 hari (Starter), 60 hari (Growth), 90 hari (Enterprise). Setelah itu, tersedia paket maintenance bulanan mulai Rp 3 juta/bulan untuk monitoring 24/7, update keamanan, dan pengembangan fitur baru.' },
         { q: 'Bisakah integrasi dengan sistem yang sudah ada?', a: 'Tentu. Kami biasa mengintegrasikan dengan payment gateway (Midtrans, Xendit, Doku), accounting (Jurnal, Accurate, Mekari), marketplace (Tokopedia, Shopee, TikTok Shop), API pemerintah, dan sistem internal Anda via REST API atau webhook.' },
         { q: 'Apakah melayani klien di luar Jawa?', a: 'Ya, seluruh Indonesia. Meeting bisa via Zoom/Google Meet, komunikasi via WhatsApp/Slack/Email, dan penyerahan bisa remote. Beberapa klien kami ada di luar Jawa — Medan, Makassar, Manado, Papua. Tidak ada biaya tambahan untuk itu.' },
